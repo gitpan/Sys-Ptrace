@@ -1,0 +1,9 @@
+CHANGES
+MANIFEST
+Makefile.PL
+Ptrace.pm
+Ptrace.xs
+t/100_load.t
+t/110_constants.t
+Sys-Ptrace.spec.PL
+Sys-Ptrace.spec

@@ -1,0 +1,16 @@
+CHANGES
+-------
+
+0.03  Mon Nov 26 16:36:00 2001
+	- Allow lower level arguments
+	- PTRACE_PEEK* data return hack
+        - Removed AutoLoad stuff
+	- Added rpm spec file
+	- Better test suite
+
+0.02  Mon Nov 26 16:13:00 2001
+	- Created by h2xs 1.20 by running the following:
+	  "h2xs sys::ptrace"
+	- Renamed all "sys::ptrace" to "Sys::Ptrace"
+	  to conform better to perl style
+	- Added a ptrace interface to Ptrace.xs
