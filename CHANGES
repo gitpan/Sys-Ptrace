@@ -1,6 +1,12 @@
 CHANGES
 -------
 
+0.04  Mon Nov 26 16:36:00 2001
+	- Added README to MANIFEST
+	- Copied association constants from /usr/include/sys/ptrace.h
+	- Avoid hard coded hacky require "ptrace.ph" stuff.
+	- Fix spewage for test suite.
+
 0.03  Mon Nov 26 16:36:00 2001
 	- Allow lower level arguments
 	- PTRACE_PEEK* data return hack

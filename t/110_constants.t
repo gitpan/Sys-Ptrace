@@ -4,9 +4,12 @@
 # Test a few random constants to make sure they match up
 
 use Test;
-use Sys::Ptrace qw(PT_TRACE_ME PTRACE_TRACEME);
+use Sys::Ptrace qw(PTRACE_ATTACH PTRACE_SYSCALL PTRACE_GETREGS PTRACE_TRACEME PT_TRACE_ME);
 
 plan tests => 4;
+
+# Load the default constants into a dummy package called "Default"
+package Default;
 
 delete $INC{"linux/ptrace.ph"};
 delete $INC{"sys/ptrace.ph"};
@@ -15,7 +18,9 @@ delete $INC{"asm/ptrace.ph"};
 eval { require "linux/ptrace.ph"; };
 eval { require "sys/ptrace.ph"; };
 
-ok PTRACE_ATTACH(),   Sys::Ptrace::PTRACE_ATTACH;
-ok PTRACE_SYSCALL(),  Sys::Ptrace::PTRACE_SYSCALL;
-ok PTRACE_GETREGS(),  Sys::Ptrace::PTRACE_GETREGS;
+package main;
+
+ok PTRACE_ATTACH(),   &Default::PTRACE_ATTACH();
+ok PTRACE_SYSCALL(),  &Default::PTRACE_SYSCALL();
+ok PTRACE_GETREGS(),  &Default::PTRACE_GETREGS();
 ok PTRACE_TRACEME,    PT_TRACE_ME;
