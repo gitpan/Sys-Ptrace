@@ -1,7 +1,11 @@
 CHANGES
 -------
 
-0.04  Mon Nov 26 16:36:00 2001
+0.05  Mon Nov 30 12:00:00 2001
+	- Added t/200_strace.t for an
+	  actual test using PTRACE_SYSCALL
+
+0.04  Mon Nov 30 11:00:00 2001
 	- Added README to MANIFEST
 	- Copied association constants from /usr/include/sys/ptrace.h
 	- Avoid hard coded hacky require "ptrace.ph" stuff.

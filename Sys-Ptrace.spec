@@ -2,7 +2,7 @@
 %define perlmod Sys-Ptrace
 Summary:	%{perlmod} perl module
 Name:		perl-%{perlmod}
-Version:	0.04
+Version:	0.05
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl

@@ -1,6 +1,6 @@
 package Sys::Ptrace;
 
-# $Id: Ptrace.pm,v 1.3 2001/11/30 17:57:28 rob Exp $
+# $Id: Ptrace.pm,v 1.4 2001/11/30 18:53:25 rob Exp $
 
 use strict;
 use vars qw( @ISA @EXPORT @EXPORT_OK $VERSION $AUTOLOAD );
@@ -8,7 +8,7 @@ use Exporter;
 use DynaLoader;
 use Carp qw( croak );
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 @ISA = qw(Exporter DynaLoader);
 
 @EXPORT_OK = qw
